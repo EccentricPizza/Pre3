@@ -1,0 +1,91 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #F8F9FA;
+  margin: 0;
+  padding: 20px;
+  color: #1A1A1A;
+}
+
+.brand {
+  color: #E63946;
+  text-align: center;
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.container { max-width: 600px; margin: auto; }
+
+button {
+  background: #E63946;
+  color: white;
+  padding: 12px 18px;
+  border: none;
+  margin-top: 10px;
+  border-radius: 6px;
+  font-size: 16px;
+}
+
+button:active {
+  opacity: 0.8;
+}
+
+.location-btn {
+  width: 100%;
+  margin-bottom: 12px;
+}
+
+.tabs {
+  display: flex;
+  justify-content: space-around;
+  margin: 20px 0;
+}
+
+.tab {
+  flex: 1;
+  padding: 12px;
+  background: #1D3557;
+  color: white;
+  border-radius: 6px;
+  margin: 0 4px;
+}
+
+.tab.active {
+  background: #E63946;
+}
+
+.item {
+  display: flex;
+  justify-content: space-between;
+  background: white;
+  padding: 12px;
+  margin-bottom: 12px;
+  border-radius: 6px;
+}
+
+.basket {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: white;
+  padding: 15px;
+  box-shadow: 0 -2px 8px rgba(0,0,0,0.1);
+}
+
+.checkout-btn {
+  background: #F4A261;
+  width: 100%;
+}
+
+input, select {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+form button {
+  width: 100%;
+  background: #1D3557;
+}
