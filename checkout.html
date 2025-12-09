@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Checkout – Eccentric Pizza</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<h1 class="brand">Checkout</h1>
+
+<h3>Your Order</h3>
+<ul id="final-basket"></ul>
+<p id="final-total"></p>
+
+<form id="checkout-form" onsubmit="submitOrder(event)">
+  <input type="text" id="name" placeholder="Your Name" required>
+  <input type="tel" id="phone" placeholder="Phone Number" required>
+  <input type="email" id="email" placeholder="Email" required>
+  
+  <label for="date">Choose Date</label>
+  <input type="date" id="date" required onchange="validateDate()">
+
+  <label for="time">Choose Time</label>
+  <select id="time" required></select>
+
+  <button type="submit">Place Order</button>
+</form>
+
+<script src="app.js"></script>
+</body>
+</html>
