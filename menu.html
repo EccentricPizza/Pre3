@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Eccentric – Menu</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<h1 class="brand">Eccentric</h1>
+<h2 id="location-display"></h2>
+
+<div class="tabs">
+  <button class="tab active" onclick="openTab('pizza')">Pizza</button>
+  <button class="tab" onclick="openTab('sides')">Sides</button>
+  <button class="tab" onclick="openTab('dips')">Dips</button>
+</div>
+
+<div id="pizza" class="tab-content active">
+  <div class="item">
+    <span>Margherita — £9</span>
+    <button onclick="addItem('Margherita', 9, [{name:'No Fresh Basil', price:0}])">Add</button>
+  </div>
+
+  <div class="item">
+    <span>Pepperoni — £10</span>
+    <button onclick="addItem('Pepperoni', 10, [{name:'Hot Honey', price:1}])">Add</button>
+  </div>
+
+  <div class="item">
+    <span>Hawaiian — £10.5</span>
+    <button onclick="addItem('Hawaiian', 10.5)">Add</button>
+  </div>
+
+  <div class="item">
+    <span>Sweet Chick — £10.5</span>
+    <button onclick="addItem('Sweet Chick', 10.5)">Add</button>
+  </div>
+</div>
+
+<div id="sides" class="tab-content">
+  <div class="item"><span>Garlic Bread — £8</span><button onclick="addItem('Garlic Bread', 8)">Add</button></div>
+  <div class="item"><span>Arancini — £6</span><button onclick="addItem('Arancini', 6)">Add</button></div>
+  <div class="item"><span>Pasta Frita — £6.5</span><button onclick="addItem('Pasta Frita', 6.5)">Add</button></div>
+</div>
+
+<div id="dips" class="tab-content">
+  <div class="item"><span>Hot Honey — £2.5</span><button onclick="addItem('Hot Honey Dip', 2.5)">Add</button></div>
+  <div class="item"><span>Garlic Aioli — £2</span><button onclick="addItem('Garlic Aioli', 2)">Add</button></div>
+  <div class="item"><span>Buffalo — £2.5</span><button onclick="addItem('Buffalo', 2.5)">Add</button></div>
+  <div class="item"><span>BBQ — £2</span><button onclick="addItem('BBQ', 2)">Add</button></div>
+</div>
+
+<div class="basket">
+  <h3>Basket</h3>
+  <ul id="basket-list"></ul>
+  <p id="total"></p>
+  <button class="checkout-btn" onclick="goToCheckout()">Checkout</button>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
